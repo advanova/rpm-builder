@@ -49,6 +49,14 @@
         <maven>3.3</maven>
     </prerequisites>
 
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
     <distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>
@@ -100,10 +108,15 @@
             <version>3.5.2</version>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>org.eclipse.packager</groupId>-->
+<!--            <artifactId>packager-rpm</artifactId>-->
+<!--            <version>${packager.version}</version>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>org.eclipse.packager</groupId>
+            <groupId>com.github.advanova.packager</groupId>
             <artifactId>packager-rpm</artifactId>
-            <version>${packager.version}</version>
+            <version>reproducible_rpms-v0.17.0-g1ae20b6-5</version>
         </dependency>
 
         <dependency>
